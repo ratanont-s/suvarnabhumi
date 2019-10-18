@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun:300,400,500,600,700&display=swap');
+@import './variable';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import './utilities';
+@import './button';
+@import './animation';
+@import './header';
+@import './main';
+@import './landing';
+
+html{
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+main {
+  position: relative;
+  min-height: 100vh;
+
+  section {
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    min-height: 100vh;
+
+    &.sec-empty {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: url('../img/cloud-bg-top.png') no-repeat center top;
+        background-size: 100% auto;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: url('../img/header-bg-bottom.png') no-repeat center bottom;
+        background-size: 100% auto;
+      }
+      .cloud {
+        position: absolute;
+        opacity: .8;
+
+        &-1 {
+          top: 25%;
+          animation: cloud 50s linear infinite alternate;
+
+          img {
+            max-width: 25vw;
+            transform: scaleX(-1);
+          }
+        }
+
+        &-2 {
+          right: 0;
+          bottom: 0;
+          animation: cloud 100s linear infinite alternate;
+
+          img {
+            max-width: 50vw;
+          }
+        }
+      }
+    }
+  }
+}

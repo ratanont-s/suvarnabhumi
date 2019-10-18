@@ -1,0 +1,49 @@
+#sec-9 {
+  .nav {
+    .number {
+      min-width: 4rem;
+      max-width: 4rem;
+      min-height: 4rem;
+      max-height: 4rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../img/number-nav-bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      margin-right: 1rem;
+    }
+    &-link{
+      display: flex;
+      align-items: center;
+      &:hover{
+        background-color: $light;
+        border-radius: $border-radius;
+      }
+      &.active{
+        color: $secondary;
+        .number{
+          background-image: url('../img/number-bg.png');
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .number {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2rem;
+      color: $white;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../img/number-bg.png') no-repeat center center;
+      background-size: contain;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

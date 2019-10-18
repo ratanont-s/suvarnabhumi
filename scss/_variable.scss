@@ -1,0 +1,23 @@
+// Color system
+$primary: #603913;
+$secondary: #005B7F;
+
+// Body
+$body-color: #ABA000;
+
+// Typography
+$font-family-base: 'Sarabun',
+sans-serif;
+$font-size-base: 1.25rem;
+$headings-color: $primary;
+$enable-responsive-font-sizes: true;
+
+// Components
+$border-radius: .5rem;
+$border-radius-lg: $border-radius + .25rem;
+$border-radius-sm: $border-radius - .25rem;
+
+// Buttons + Forms
+$input-btn-padding-x: 2rem;
+$input-btn-padding-x-lg: $input-btn-padding-x + .25rem;
+$input-btn-padding-x-sm: $input-btn-padding-x - .25rem;
